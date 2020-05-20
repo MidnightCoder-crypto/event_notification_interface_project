@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">event_notify interface</string>
+    <string-array name="semesters">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="section">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+    </string-array>
+
+    <string-array name="departments">
+        <item>CSE</item>
+    </string-array>
+    
+    
+    
+    
+</resources>

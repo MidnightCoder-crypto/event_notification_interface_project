@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:padding="100dp"
+                app:cardCornerRadius="4dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:gravity="center_horizontal"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:text="SELECT DEPARTMENT:"
+                        android:textSize="30dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/dept"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+
+                        android:layout_marginTop="30dp"
+                        android:layout_weight="1"></Spinner>
+
+                    <ImageButton
+                        android:id="@+id/addSem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_add_circle_black_24dp"
+                        android:tooltipText="ADD SEMESTER" />
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:visibility="gone"
+                android:layout_margin="10dp"
+                android:id="@+id/sem_layout"
+                android:layout_width="match_parent"
+                android:padding="100dp"
+                app:cardCornerRadius="4dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:gravity="center_horizontal"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:text="SELECT SEMESTER:"
+                        android:textSize="30dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/sem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+
+                        android:layout_marginTop="30dp"
+                        android:layout_weight="1"></Spinner>
+
+                    <ImageButton
+                        android:id="@+id/addSec"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_add_circle_black_24dp"
+                        android:tooltipText="ADD SEMESTER" />
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_margin="10dp"
+                android:visibility="gone"
+                android:id="@+id/section_layout"
+                android:layout_width="match_parent"
+                android:padding="100dp"
+                app:cardCornerRadius="4dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:gravity="center_horizontal"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:text="SELECT SECTION:"
+                        android:textSize="30dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/section"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+
+                        android:layout_marginTop="30dp"
+                        android:layout_weight="1"></Spinner>
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:layout_margin="10dp"
+                android:id="@+id/next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="NEXT"
+                android:textSize="30dp" />
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_margin="10dp"
+                android:visibility="gone"
+                android:id="@+id/event_layout"
+                android:layout_width="match_parent"
+                android:padding="100dp"
+                app:cardCornerRadius="4dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:text="ENTER EVENT NAME:"
+                        android:textSize="30dp" />
+
+                    <EditText
+                        android:layout_gravity="center"
+                        android:textSize="20dp"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/name_of_event"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+                    <TextView
+                        android:gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:text="ENTER EVENT DESCRIPTION:"
+                        android:textSize="30dp" />
+
+                    <EditText
+                        android:inputType="textMultiLine"
+                        android:layout_gravity="center"
+                        android:textSize="20dp"
+                        android:lines="10"
+                        android:padding="10dp"
+                        android:id="@+id/description_of_event"
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp" />
+
+                    <TextView
+                        android:gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:text="ENTER DATE OF EVENT:"
+                        android:textSize="30dp" />
+
+                    <LinearLayout
+                        android:layout_gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+
+                            android:layout_gravity="center_horizontal"
+                            android:textSize="30dp"
+                            android:hint="08:02:2020"
+
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:id="@+id/date_of_event"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <ImageButton
+                            android:layout_weight="1"
+                            android:id="@+id/date_picker"
+                            android:src="@drawable/ic_date_range_black_24dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent" />
+
+                    </LinearLayout>
+                    <TextView
+                        android:gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:text="ENTER TIME OF EVENT:"
+                        android:textSize="30dp" />
+                    <LinearLayout
+                        android:layout_gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+
+                            android:layout_gravity="center_horizontal"
+                            android:textSize="30dp"
+                            android:hint="04:25"
+
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:id="@+id/time_of_event"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <ImageButton
+                            android:layout_weight="1"
+                            android:id="@+id/time_picker"
+                            android:src="@drawable/ic_access_time_black_24dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:text="ENTER EVENT VENUE:"
+                        android:textSize="30dp" />
+
+                    <EditText
+                        android:layout_gravity="center"
+                        android:textSize="20dp"
+                        android:id="@+id/name_of_venue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+                    <Button
+
+                    android:id="@+id/post"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="POST"
+                    android:textSize="30dp" />
+
+
+
+                </LinearLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+</ScrollView>
+
+    <!--android:visibility="gone"-->
+
+
+
